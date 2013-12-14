@@ -1,4 +1,4 @@
-package ma.vinci.geolocalvehicule;
+package ma.vinci.geolocalvehicule.modele;
 
 public class User {
 private int id_user;

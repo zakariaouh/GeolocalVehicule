@@ -4,5 +4,7 @@
     <string name="app_name">GeolocalVehicule</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_accueil">Accueil</string>
+    <string name="title_activity_vehiculesliste">Vehiculesliste</string>
 
 </resources>
