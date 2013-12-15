@@ -35,8 +35,8 @@ public  User u;
 				
 		
 						 u=new User(login.getText()+"", password.getText()+"");
-					boolean	cantbeconnected=Authentification.seconnecter(u);
-					if (cantbeconnected) {
+					boolean	canbeconnected=Authentification.seconnecter(u);
+					if (canbeconnected) {
 							Intent intent=new Intent(getBaseContext(),Accueil.class);
 							startActivity(intent);	
 					}else{

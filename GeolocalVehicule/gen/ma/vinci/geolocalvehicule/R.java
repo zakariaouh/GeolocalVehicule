@@ -22,22 +22,38 @@ public final class R {
     }
     public static final class drawable {
         public static final int auto=0x7f020000;
-        public static final int bus=0x7f020001;
-        public static final int camion=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
+        public static final int blue_bg=0x7f020001;
+        public static final int bus=0x7f020002;
+        public static final int camion=0x7f020003;
+        public static final int engraved_bg=0x7f020004;
+        public static final int gray_bg=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
+        public static final int icon_menu=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000a;
-        public static final int btn_menu=0x7f080005;
+        public static final int Aff_Map=0x7f080008;
+        public static final int FrameLayout1=0x7f080004;
+        public static final int Real_Aug=0x7f08000a;
+        public static final int action_settings=0x7f080016;
+        public static final int apropos=0x7f08000c;
         public static final int connexionbtn=0x7f080001;
-        public static final int description_item=0x7f080009;
-        public static final int img=0x7f080007;
-        public static final int linearLayout1=0x7f080004;
-        public static final int listeviewvehicule=0x7f080006;
+        public static final int description_item=0x7f080015;
+        public static final int header=0x7f08000e;
+        public static final int header_vertical_divider_1=0x7f08000f;
+        public static final int img=0x7f080013;
+        public static final int listepays=0x7f080011;
+        public static final int listeviewvehicule=0x7f080012;
         public static final int localiserbtn=0x7f080000;
         public static final int login=0x7f080003;
+        public static final int menuPanel=0x7f080005;
+        public static final int menuViewButton=0x7f080010;
+        public static final int menu_item_divider_1=0x7f080007;
+        public static final int menu_item_divider_2=0x7f080009;
+        public static final int menu_item_divider_3=0x7f08000b;
+        public static final int menu_title_1=0x7f080006;
         public static final int password=0x7f080002;
-        public static final int title_item=0x7f080008;
+        public static final int slidingPanel=0x7f08000d;
+        public static final int title_item=0x7f080014;
     }
     public static final class layout {
         public static final int activity_accueil=0x7f030000;
