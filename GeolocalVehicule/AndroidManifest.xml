@@ -30,6 +30,10 @@
             android:name="ma.vinci.geolocalvehicule.Vehiculesliste"
             android:label="@string/title_activity_vehiculesliste" >
         </activity>
+        <activity
+            android:name="ma.vinci.geolocalvehicule.Vehicule_Info"
+            android:label="@string/title_activity_vehicule__info" >
+        </activity>
     </application>
 
 </manifest>

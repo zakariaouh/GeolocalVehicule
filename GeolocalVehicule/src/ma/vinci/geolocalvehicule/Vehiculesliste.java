@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 
 
 import android.view.View;
@@ -22,6 +23,8 @@ import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -33,7 +36,7 @@ public class Vehiculesliste extends Activity {
 	private ListView list_adapter;
 	private Context cntxt = this;
 	private Button aff_map,real_aug,apropos;
-	
+	public static int index_selected_item;
 	//Declare
 		private LinearLayout slidingPanel;
 		private boolean isExpanded;
@@ -145,6 +148,21 @@ public class Vehiculesliste extends Activity {
 					
 				}
 			});
+
+    		list_adapter.setOnItemClickListener(new OnItemClickListener() {
+
+				@Override
+				public void onItemClick(AdapterView<?> arg0, View arg1,
+						int arg2, long arg3) {
+					//Toast.makeText(cntxt, ""+arg2,Toast.LENGTH_LONG).show();
+					index_selected_item=arg2;
+					Intent intent=new Intent(getBaseContext(),Vehicule_Info.class);
+					startActivity(intent);	
+					
+				}
+  	          
+				                 
+  	       });
         
 	}
 
