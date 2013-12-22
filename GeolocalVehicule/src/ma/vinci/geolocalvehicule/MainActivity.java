@@ -37,14 +37,19 @@ public  User u;
 						 u=new User(login.getText()+"", password.getText()+"");
 					boolean	canbeconnected=Authentification.seconnecter(u);
 					if (canbeconnected) {
-							Intent intent=new Intent(getBaseContext(),Accueil.class);
-							startActivity(intent);	
+						Intent intent=new Intent(getBaseContext(),Vehiculesliste.class);
+						startActivity(intent);	
 					}else{
 						Toast.makeText(cntxt, "Combinaison login/mdp incorrect",Toast.LENGTH_LONG).show();
 					}
 				
 			}
 		});
+		
+		
+		//------------- a supprimer-------/
+		Intent intent=new Intent(getBaseContext(),Vehiculesliste.class);
+		startActivity(intent);	
      
     }
 

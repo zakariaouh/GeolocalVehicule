@@ -7,5 +7,7 @@
     <string name="title_activity_accueil">Accueil</string>
     <string name="title_activity_vehiculesliste">Vehiculesliste</string>
     <string name="title_activity_vehicule__info">Vehicule_Info</string>
+    <string name="title_activity_afficher_info">AfficherInfo</string>
+    <string name="title_activity_afficher_map">AfficherMap</string>
 
 </resources>

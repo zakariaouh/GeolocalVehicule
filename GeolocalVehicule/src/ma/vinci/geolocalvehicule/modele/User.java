@@ -1,6 +1,8 @@
 package ma.vinci.geolocalvehicule.modele;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
 private int id_user;
 private String login;
 private String password;

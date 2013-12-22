@@ -1,8 +1,10 @@
 package ma.vinci.geolocalvehicule.modele;
 
+import java.io.Serializable;
 
 
-public class Vehicule {
+
+public class Vehicule implements Serializable {
 	User driver;
 	private Double logitude;
 	private Double latitude;

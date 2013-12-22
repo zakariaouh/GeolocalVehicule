@@ -1,10 +1,11 @@
 package ma.vinci.geolocalvehicule.modele;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import android.R.string;
 
-public class Chaffeur {
+public class Chaffeur implements Serializable{
 int age;
 string nom;
 string prenom;

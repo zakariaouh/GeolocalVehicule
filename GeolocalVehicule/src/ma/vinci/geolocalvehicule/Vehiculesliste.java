@@ -1,42 +1,38 @@
 package ma.vinci.geolocalvehicule;
 
 import java.util.ArrayList;
-///import java.util.List;
 
-import ma.vinci.geolocalvehicule.R;
 import ma.vinci.geolocalvehicule.action.VehiculeAdapter;
 import ma.vinci.geolocalvehicule.action.VehiculetActions;
 import ma.vinci.geolocalvehicule.modele.Vehicule;
 import ma.vinci.geolocalvehicule.viewanimation.CollapseAnimation;
 import ma.vinci.geolocalvehicule.viewanimation.ExpandAnimation;
-import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.widget.Button;
-import android.widget.ListView;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-
-
+import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
-
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+///import java.util.List;
 public class Vehiculesliste extends Activity {
 
 	private ListView list_adapter;
 	private Context cntxt = this;
 	private Button aff_map,real_aug,apropos;
-	public static int index_selected_item;
+	public static Vehicule vh;
 	//Declare
 		private LinearLayout slidingPanel;
 		private boolean isExpanded;
@@ -59,11 +55,10 @@ public class Vehiculesliste extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_vehiculesliste);
 		
-		
         list_adapter = (ListView)findViewById(R.id.listeviewvehicule);
         
         //remplire liste view
-    	ArrayList<Vehicule> data = VehiculetActions.getvihicules();	
+    	final ArrayList<Vehicule> data = VehiculetActions.getvihicules();	
 	       
         VehiculeAdapter adapter = new VehiculeAdapter(cntxt,data);
         list_adapter.setAdapter(adapter);
@@ -136,7 +131,8 @@ public class Vehiculesliste extends Activity {
 				
 				@Override
 				public void onClick(View v) {
-					Toast.makeText(cntxt, "aff_map En cours de construction",Toast.LENGTH_LONG).show();
+					Intent intent=new Intent(getBaseContext(),AfficherMap.class);
+					startActivity(intent);	
 					
 				}
 			});
@@ -154,9 +150,9 @@ public class Vehiculesliste extends Activity {
 				@Override
 				public void onItemClick(AdapterView<?> arg0, View arg1,
 						int arg2, long arg3) {
-					//Toast.makeText(cntxt, ""+arg2,Toast.LENGTH_LONG).show();
-					index_selected_item=arg2;
+					
 					Intent intent=new Intent(getBaseContext(),Vehicule_Info.class);
+					intent.putExtra("VehiculeSelected",data.get(arg2));
 					startActivity(intent);	
 					
 				}
