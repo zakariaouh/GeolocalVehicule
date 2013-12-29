@@ -3,6 +3,8 @@ package ma.vinci.geolocalvehicule.action;
 import ma.vinci.geolocalvehicule.modele.User;
 
 public class Authentification {
+	//non util cette classe peut etre supprimer
+	/*
 public static boolean seconnecter(User u){
 	boolean isuser=false;
 	//connection avec web service;
@@ -11,5 +13,5 @@ public static boolean seconnecter(User u){
 	if("zakaria".equalsIgnoreCase(u.getLogin()) &&"passwo".equalsIgnoreCase(u.getPassword())){
 		isuser=true;}
 	return isuser;
-}
+}*/
 }

@@ -218,18 +218,17 @@ containing a value of this type.
         public static final int Aff_Map=0x7f050018;
         public static final int FrameLayout1=0x7f050014;
         public static final int Real_Aug=0x7f05001a;
-        public static final int action_settings=0x7f050026;
+        public static final int action_settings=0x7f050025;
         public static final int apropos=0x7f05001c;
         public static final int connexionbtn=0x7f050007;
         public static final int description=0x7f05000c;
-        public static final int description_item=0x7f050025;
+        public static final int description_item=0x7f050024;
         public static final int driver=0x7f05000f;
         public static final int header=0x7f05001e;
         public static final int header_vertical_divider_1=0x7f05001f;
         public static final int hybrid=0x7f050004;
-        public static final int img=0x7f050023;
-        public static final int listepays=0x7f050021;
-        public static final int listeviewvehicule=0x7f050022;
+        public static final int img=0x7f050022;
+        public static final int listeviewvehicule=0x7f050021;
         public static final int localiserbtn=0x7f050005;
         public static final int login=0x7f050008;
         public static final int map=0x7f050006;
@@ -252,7 +251,7 @@ containing a value of this type.
         public static final int textView1=0x7f05000b;
         public static final int textView3=0x7f05000e;
         public static final int textView5=0x7f050011;
-        public static final int title_item=0x7f050024;
+        public static final int title_item=0x7f050023;
         public static final int typev=0x7f050012;
     }
     public static final class integer {

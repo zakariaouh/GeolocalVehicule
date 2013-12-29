@@ -6,7 +6,9 @@ import java.util.ArrayList;
 import ma.vinci.geolocalvehicule.modele.User;
 import ma.vinci.geolocalvehicule.modele.Vehicule;
 
-public class VehiculetActions {
+public class VehiculetActions {// a supprimer
+	
+	/*
 	//public static ArrayList<Vehicule> vehiculelist;
 public static ArrayList<Vehicule>getvihicules(){
 	//data from webservice
@@ -21,7 +23,7 @@ public static ArrayList<Vehicule>getvihicules(){
   
 	return array;
 	
-}
+}/**/
 /*public static Vehicule getvihiculeinfo(int position){
 	return vehiculelist.get(position);
 }*/

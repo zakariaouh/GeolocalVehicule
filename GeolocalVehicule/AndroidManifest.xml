@@ -59,8 +59,7 @@
         </activity>
         <activity
             android:name="ma.vinci.geolocalvehicule.Vehicule_Info"
-            android:label="@string/title_activity_vehicule__info" 
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:label="@string/title_activity_vehicule__info" >
         </activity>
         <activity
             android:name="ma.vinci.geolocalvehicule.AfficherInfo"

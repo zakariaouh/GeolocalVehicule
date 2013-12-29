@@ -114,24 +114,11 @@
 			                android:visibility="visible" />
 			      
   				</RelativeLayout>
-
-  				  <TextView
-  				      android:id="@+id/listepays"
-  				      android:layout_width="fill_parent"
-  				      android:layout_height="50dp"
-  				      android:layout_below="@+id/menu_item_divider_2"
-  				      android:layout_marginLeft="15dp"
-  				      android:editable="true"
-  				      android:gravity="center_vertical"
-  				      android:text="Liste des véhicules géolocalisés"
-  				      android:textColorHighlight="#550022" >
- 				 
-            </TextView>
  
         		<ListView
         		    android:id="@+id/listeviewvehicule"
         		    android:layout_width="match_parent"
-        		    android:layout_height="319dp" >
+        		    android:layout_height="match_parent" >
 
         		</ListView>
 

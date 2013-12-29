@@ -25,7 +25,9 @@ public class AfficherMap extends Activity {
 		googleMap = ((MapFragment) getFragmentManager().findFragmentById( R.id.map)).getMap();
 		if (googleMap == null) { 
 			Toast.makeText(getApplicationContext(), "Sorry! unable to create maps", Toast.LENGTH_SHORT) .show();
-			}
+			}else {
+				
+			
 		
 		 LatLng elm1 = new LatLng(34.034453, -6.767578);
 		 LatLng elm2 = new LatLng(33.953043, -6.881561);
@@ -60,7 +62,7 @@ public class AfficherMap extends Activity {
 		 googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 			CameraUpdate update = CameraUpdateFactory.newLatLngZoom(LOCATION_SURRREY, 16);
 			googleMap.animateCamera(update);
-	}
+	}}
 
 	
 

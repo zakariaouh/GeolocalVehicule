@@ -14,16 +14,33 @@ private Context cntxt=this;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_vehicule__info);
+		
 		driver=(TextView)findViewById(R.id.driver);
 		descriptionv=(TextView)findViewById(R.id.description);
 		typev=(TextView)findViewById(R.id.typev);
 		
 		
 		Vehicule vh=(Vehicule) getIntent().getSerializableExtra("VehiculeSelected");
-
-		driver.setText(vh.getDriver().getLogin());
-		typev.setText(vh.getType());
-		descriptionv.setText(vh.getDescription());
+		
+		driver.setText(vh.getDriver().getPrenom()+ " " +vh.getDriver().getNom());
+	
+		String typevh="";
+		switch (vh.getType_vehicule()) {
+		case 0:
+			typevh="Camion de Gazoil Renault";
+			break;
+	case 1:
+			
+		typevh="Voiture de sercice Renault";
+	case 2:
+		typevh="Trasport Car";
+		break;
+		default:
+			break;
+		}
+		
+		typev.setText(typevh);
+		descriptionv.setText(vh.getDescription_vehicule());/**/
 	}
 
 	

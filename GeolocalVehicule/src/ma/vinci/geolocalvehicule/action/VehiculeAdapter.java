@@ -3,6 +3,7 @@ package ma.vinci.geolocalvehicule.action;
 import java.util.ArrayList;
 
 import ma.vinci.geolocalvehicule.R;
+import ma.vinci.geolocalvehicule.modele.Chauffeur;
 import ma.vinci.geolocalvehicule.modele.Vehicule;
 
 import android.content.Context;
@@ -63,11 +64,11 @@ public class VehiculeAdapter  extends BaseAdapter{
 		TextView description = (TextView)layout_item.findViewById(R.id.description_item);
 		
 		ImageView img = (ImageView)layout_item.findViewById(R.id.img);
+		Chauffeur driver=m_data.get(position).getDriver();
+		title.setText(driver.getPrenom()+ " " +driver.getNom());
+		description.setText(m_data.get(position).getDescription_vehicule());
 		
-		title.setText(m_data.get(position).getDriver().getLogin());
-		description.setText(m_data.get(position).getDescription());
-		
-		int imgid=m_data.get(position).getImage();
+		int imgid=m_data.get(position).getType_vehicule();
 		if(imgid==1){
 			img.setImageResource(R.drawable.auto);
 		}
