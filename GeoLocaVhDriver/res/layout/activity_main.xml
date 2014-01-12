@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/info2">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fieldLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fieldLongitude" 
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/fieldLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fieldLatitude"  
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/fieldPostalCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fieldPostalCode"  
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/fieldCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fieldCountry"  
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/fieldAddressLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fieldAddressLine"  
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/fieldCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fieldCity"  
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
